@@ -6,50 +6,48 @@
 div {
     width: 200px;
     height: 200px;
-    background-color: blueviolet;
+    background-color: red;
     border-radius: 50%;
     animation: 8s circle infinite linear;
     box-shadow: 20px 20px lightgray;
 }
 div:nth-of-type(2) {
-    width: 200px;
-    height: 200px;
     position: absolute;
     top: 200px;
     left: 200px;
-    background-color: blueviolet;
-    border-radius: 50%;
     animation: 8s circle2 linear infinite;
-    box-shadow: 20px 20px lightgray;
 }
 div:nth-of-type(3) {
-    width: 200px;
-    height: 200px;
     position: absolute;
     top: 400px;
     left: 400px;
-    background-color: blueviolet;
-    border-radius: 50%;
     animation: 8s circle3 linear infinite;
-    box-shadow: 20px 20px lightgray;
 }
 div:nth-of-type(4) {
-    width: 200px;
-    height: 200px;
     position: absolute;
     top: 600px;
     left: 600px;
-    background-color: blueviolet;
-    border-radius: 50%;
     animation: 8s circle4 linear infinite;
-    box-shadow: 20px 20px lightgray;
 }
 
 @keyframes circle {
-    0%, 100% {transform: translate(0, 0); background-color: red}
-    25% {transform: translate(calc(100vw - 200px), 0); background-color: blue; box-shadow: -20px 0px lightgray}
-    50% {transform: translate(calc(100vw - 200px), calc(100vh - 200px));background-color: green; box-shadow: -20px -20px lightgray}
-    75% {transform: translate(0px, calc(100vh - 200px)); background-color: pink; box-shadow: 0px -20px lightgray}
+    0%, 100% {
+        transform: translate(0, 0); 
+        background-color: red;
+    }
+    25% {
+        transform: translate(calc(100vw - 200px), 0); 
+        background-color: blue; 
+        box-shadow: -20px 0px lightgray;
+    }
+    50% {transform: translate(calc(100vw - 200px), calc(100vh - 200px));
+        background-color: green; 
+        box-shadow: -20px -20px lightgray;
+    }
+    75% {transform: translate(0px, calc(100vh - 200px)); 
+        background-color: pink; 
+        box-shadow: 0px -20px lightgray;
+    }
 }
 @keyframes circle2 {
     0%, 100% {transform: translate(0, 0); background-color: red}
